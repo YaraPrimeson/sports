@@ -1,0 +1,113 @@
+.header {
+  background: #f4f6f9;
+  max-height: 665px;
+  min-height: 665px;
+  overflow: hidden;
+}
+.title {
+  /* margin: 63px 191px; */
+  padding: 63px 0 0 191px;
+}
+.title-first {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #5282f0;
+  text-decoration: none;
+  position: relative;
+}
+.title-first::before {
+  content: "";
+  width: 23px;
+  height: 24px;
+  position: absolute;
+
+  background: url(../../img/ball.svg) no-repeat;
+  top: 0px;
+  left: -30px;
+}
+.title-first::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background: url(../../img/grow.svg) no-repeat;
+  top: -2px;
+  left: -13px;
+}
+.header__container {
+  margin-top: 133px;
+  margin-left: 163px;
+  max-width: 563px;
+}
+.header__caption {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+.header__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.44;
+  color: #4f4f4f;
+}
+.header__button {
+  margin-top: 50px;
+  display: flex;
+}
+.button {
+  width: 156px;
+  height: 47px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.header__google {
+  margin-left: 36px;
+}
+button {
+  position: relative;
+  width: 156px;
+  height: 47px;
+  color: #4f4f4f;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid transparent;
+}
+/*   font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+
+  border-radius: 55px;
+  background: none;
+  cursor: pointer;
+  padding: 17px 40px 19px;
+  min-width: 200px;
+  border: 1px solid transparent; }*/
+
+.header__ios::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: url(../../img/icons8-apple-logo.svg) center no-repeat;
+}
+.btn-app {
+  font-family: "Roboto";
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.btn-text {
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1.2000000476837158px;
+}
+.btn-flex {
+  display: flex;
+  padding-left: 50px;
+  flex-direction: column;
+}

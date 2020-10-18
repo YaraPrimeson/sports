@@ -1,0 +1,7 @@
+* {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+.maincontent {
+  flex-grow: 1;
+}
