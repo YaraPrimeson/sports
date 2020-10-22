@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/main.scss">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <body>
-  <script src="./index.js"></script>
+  
 <main class="maincontent">
 
   <!-- HEADER  -->
 
 
 <header class="header">
+  <div class="collumn">
   <h1 class="title">
     <a href="" class="title-first">Sports</a>
   </h1>
@@ -23,45 +25,75 @@
     <p class="header__text">Achieve super-fan status by getting tailored updates and up-to-the-minute information on your team.</p>
     <div class="header__button">
     <div class="header__ios">
-      <button class="ios button"> Download on the <span class="btn-app"> App Store</span></button>
+      <!-- <button class="ios button"><span class="btn-flex"><span class="btn-text"> Download on the</span> <span class="btn-app"> App Store</span></span></button> -->
+      <button class="ios button"><img src="./img/Apple Store.svg" alt=""></button>
     </div>
 
     <div class="header__google"> 
-      <button class="google button">Download on<span class="btn-google"> google play</span></button>
+      <!-- <button class="google button">Download on<span class="btn-google"> google play</span></button> -->
+      <button class="google button"><img src="./img/GooglePlay.svg" alt=""></button>
     </div>
   </div>
   </div>
-
+</div>
   <div class="mobilka">
-  <div class="mobilka__"><img src="./img/mobilka.svg" alt="mobilka"></div>
-  <div class="mobilka__"><img src="./img/mobilka.svg" alt="mobilka"></div>
-  <div class="mobilka__"><img src="./img/mobilka.svg" alt="mobilka"></div>
-  <div class="mobilka__"><img src="./img/mobilka.svg" alt="mobilka"></div>
-  <div class="mobilka__"><img src="./img/mobilka.svg" alt="mobilka"></div>
+    <!-- <div>
+      <img src="./img/./Frame.jpg" alt="">
+    </div> -->
+    <div class="mob1"></div>
+    <div class="mob2"></div>
+    <div class="mob3"></div>
+    <div class="mob4"></div>
+    <div class="mob5"><i class="postimg"></i></div> 
+  <!-- <div class="mobilka__first size"><img src="./img/mobilka.svg" alt="mobilka"></div>
+  <div class="mobilka__second size"><img src="./img/mobilka.svg" alt="mobilka"></div>
+  <div class="mobilka__third size"><img src="./img/mobilka.svg" alt="mobilka"></div>
+  <div class="mobilka__fourth size"><img src="./img/mobilka.svg" alt="mobilka"></div>
+  <div class="mobilka__fives size"><img src="./img/mobilka.svg" alt="mobilka"></div> -->
 </div>
 </header>
 
 <!--REPLAY -->
 
 
+
 <div>
-  <section>
-    <div>
-      <div>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
+  
+<section class="container">
+  <div class="footballer__back"></div>
+    <div class="container__part">
+      <div class="conteiner__отступ">
+        <div class="container__block">
+          <div class="container__padd">
+          <datetime>Sat, 12:35pm</datetime>
+          <div class="block__vs"><p> Arsenal v
+            Chelsea</p></div>
+            <div class="block__match"><p>Friendly Match</p></div>
+            <div class="block__footer">
+              <p>
+                Turn on all match notifications
+              </p>
+              <button class="btn__switch"></button>
+            </div>
+            </div>
+        </div>
+        <div class="block__second"><img class="block__img" src="./img/Rectangle.svg" alt="#"></div>
       </div>
-      <div>
-        <a href="">WHAT IT DOES</a>
-        <h2>An Enhanced Football Experience</h2>
-        <p>The Guardian Live Scores app is your go to app for live scores and watching Premier League goals… Get in there, what a result!</p>
-      <p>As well as videos of all the goals, you can watch match highlights, check out the latest scores and results and stay bang-up-to-date with the big football stories from The Guardian publication.</p>
-      </div>
-      <div><a href=""></a></div>
     </div>
-  </section>
-  <section>
+      <div class="container__title">
+        <a href="#" class="part__link">WHAT IT DOES</a>
+        <h2 class="part__title">An Enhanced Football Experience</h2>
+        <p class="part__text">The Guardian Live Scores app is your go to app for live scores and watching Premier League goals… Get in there, what a result!</p>
+      <p class="part__texttwo">As well as videos of all the goals, you can watch match highlights, check out the latest scores and results and stay bang-up-to-date with the big football stories from The Guardian publication.</p>
+      </div>
+      <div class="part__block--foot"><a class="part__link--foot" href="#">Learn more</a></div>
+    
+</section>
+
+  <!--  -->
+
+
+  <section class="container">
     <div>
       <a href="">GET STARTED</a>
       <h2>User-friendly Interface</h2>
@@ -78,49 +110,52 @@
   <!-- CARD -->
 
 
-  <section> 
-    <div>
-      <div>
-        <h2>Features That Will Tailor Your Experience</h2>
+  <section class="part"> 
+    <div class="part__container">
+      <div class="part__title">
+        <h2 class="title__title">Features That Will Tailor Your Experience</h2>
       </div>
-      <ul>
-        <li>
-          <div>
-            <i></i>
-            <p>• Video highlights for every Premier League and English Football League game</p></div></li>
-        <li>
-          <div>
+      <div class="part__nav">
+      <ul class="part__list">
+        <li class="list__information">
+          <div class="tv">
+            <p class="list__paragraph">• Video highlights for every Premier League and English Football League game</p>
+          </div>
+          </li>
+        <li class="list__information">
+          <div class="bell">
           <i></i>
-          <p>• Notifications for your teams, including in-game goal clips and Premier League match highlights for Sky TV subscribers with Guardian.</p></div></li>
-        <li>
-          <div>
+          <p class="list__paragraph">• Notifications for your teams, including in-game goal clips and Premier League match highlights for Sky TV subscribers with Guardian.</p></div></li>
+        <li class="list__information">
+          <div class="hd">
           <i></i>
-          <p>• Brand new video section including dedicated areas for your chosen team, trending video, Premier League, Football league and other major leagues</p></div></li>
-        <li>
-          <div>
+          <p class="list__paragraph">• Brand new video section including dedicated areas for your chosen team, trending video, Premier League, Football league and other major leagues</p></div></li>
+        <li class="list__information">
+          <div class="flag">
           <i></i>
-          <p>• Match pages showing live scores, commentary, team line-ups and enhanced match stats to keep you up-to-date on all the action</p></div></li>
-        <li>
-          <div>
+          <p class="list__paragraph">• Match pages showing live scores, commentary, team line-ups and enhanced match stats to keep you up-to-date on all the action</p></div></li>
+        <li class="list__information">
+          <div class="tent">
           <i></i>
-          <p>• The new picture in picture video mode means you can watch goals, manager interviews and more whilst using other areas of the app – so you don’t need to miss any of the action</p></div></li>
-        <li>
-          <div>
+          <p class="list__paragraph">• The new picture in picture video mode means you can watch goals, manager interviews and more whilst using other areas of the app – so you don’t need to miss any of the action</p></div></li>
+        <li class="list__information">
+          <div class="poll">
           <i></i>
-          <p>• Live updated league tables including all the domestic, European and major leagues and tournaments</p></div></li>
-        <li>
-          <div>
+          <p class="list__paragraph">• Live updated league tables including all the domestic, European and major leagues and tournaments</p></div></li>
+        <li class="list__information">
+          <div class="device">
           <i></i>
-          <p>• The Guardian News Vidiprinter. Follow the goals as they go in with our new and improved Vidiprinter</p></div></li>
-        <li>
-          <div>
+          <p class="list__paragraph">• The Guardian News Vidiprinter. Follow the goals as they go in with our new and improved Vidiprinter</p></div></li>
+        <li class="list__information">
+          <div class="people">
           <i></i>
-          <p>• Match reports, previews and a dedicated news section</p></div></li>
-        <li>
-          <div>
+          <p class="list__paragraph">• Match reports, previews and a dedicated news section</p></div></li>
+        <li class="list__information">
+          <div class="tune">
           <i></i>
-          <p>• And you can achieve super-fan status by personalising your home page with up-to-the-minute information on your team.</p></div></li>
+          <p class="list__paragraph">• And you can achieve super-fan status by personalising your home page with up-to-the-minute information on your team.</p></div></li>
       </ul>
+    </div>
     </div>
   </section>
 
@@ -229,9 +264,9 @@
   </div>
   <div>
     <ul>
-      <li><button><img src="./img/птица-twitter.svg" alt="" class="twitter"></button></li>
+      <!-- <li><button><img src="#" alt="" class="twitter"></button></li>
       <li><button><img src="./img/twitter.svg" alt=""></button></li>
-      <li><button><img src="./img/twitter.svg" alt=""></button></li>
+      <li><button><img src="./img/twitter.svg" alt=""></button></li> -->
     </ul>
   </div>
 </div>

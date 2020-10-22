@@ -1,0 +1,150 @@
+.part {
+  background: url("../img/Group696.svg") no-repeat;
+  background-size: 100%;
+  list-style: none;
+}
+
+.title__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  padding-top: 76px;
+  margin-bottom: 105px;
+  text-align: center;
+  color: #fff;
+}
+.part__nav {
+  padding-left: 165px;
+  padding-bottom: 66px;
+  padding-right: 165px;
+}
+.part__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 450px;
+  flex-direction: row;
+  gap: 50px 185px;
+}
+.list__information {
+  width: 310px;
+  display: inline-block;
+}
+.list__paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #fff;
+}
+.tv {
+  position: relative;
+}
+.tv::before {
+  content: "";
+  position: absolute;
+  background: url("../img/TV.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+  bottom: 45px;
+  left: 0;
+}
+.bell {
+  position: relative;
+}
+.bell::before {
+  content: "";
+  position: absolute;
+  background: url("../img/bell.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+  bottom: 45px;
+  left: 0;
+}
+.hd {
+  position: relative;
+}
+.hd::before {
+  content: "";
+  position: absolute;
+  background: url("../img/hd.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+  bottom: 45px;
+  left: 0;
+}
+.flag {
+  position: relative;
+}
+.flag::before {
+  content: "";
+  position: absolute;
+  background: url("../img/flag.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+  bottom: 45px;
+  left: 0;
+}
+
+.tent {
+  position: relative;
+}
+.tent::before {
+  content: "";
+  position: absolute;
+  background: url("../img/tent.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+  bottom: 45px;
+  left: 0;
+}
+.poll {
+  position: relative;
+}
+.poll::before {
+  content: "";
+  position: absolute;
+  background: url("../img/poll.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+  bottom: 45px;
+  left: 0;
+}
+
+.device {
+  position: relative;
+}
+.device::before {
+  content: "";
+  position: absolute;
+  background: url("../img/device.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+  bottom: 45px;
+  left: 0;
+}
+
+.people {
+  position: relative;
+}
+.people::before {
+  content: "";
+  position: absolute;
+  background: url("../img/people.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+  bottom: 45px;
+  left: 0;
+}
+
+.tune {
+  position: relative;
+}
+.tune::before {
+  content: "";
+  position: absolute;
+  background: url("../img/tune.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+  bottom: 45px;
+  left: 0;
+}

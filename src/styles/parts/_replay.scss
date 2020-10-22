@@ -1,0 +1,66 @@
+.container {
+  max-width: 1040px;
+  // margin: 0 auto;
+  position: relative;
+}
+.footballer__back {
+  background: url("../img/footballer.png") no-repeat;
+  height: 592px;
+  width: 805px;
+  opacity: linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%),
+    rgba(255, 255, 255, 0.5);
+  opacity: 0, 9;
+}
+.conteiner__отступ {
+  padding-top: 100px;
+  padding-left: 160px;
+  background: #fff;
+}
+
+.container__block {
+  width: 360px;
+  height: 218px;
+  border: 1px solid #000;
+}
+.container__padd {
+  padding-left: 16px;
+  position: relative;
+}
+.container__padd::before {
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  top: 50px;
+  left: 200px;
+  content: "";
+  background: url("../img/arsenal-f-c-seeklogo.com.svg") center center no-repeat;
+}
+
+.container__padd::after {
+  position: absolute;
+  width: 120px;
+  height: 111px;
+  top: 35px;
+  left: 239px;
+  content: "";
+  background: url("../img/chelsea-fc.svg") center center no-repeat;
+}
+
+datetime {
+  color: #4f4f4f;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+  padding-top: 27px;
+  display: block;
+}
+.block__vs {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.27;
+  padding-top: 13px;
+}
+.block__img {
+  width: 360px;
+  height: 218px;
+}
