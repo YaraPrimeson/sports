@@ -1,0 +1,156 @@
+.header {
+  background: #f4f6f9;
+  max-height: 665px;
+  height: 665px;
+  display: flex;
+  overflow: hidden;
+}
+.collumn {
+  padding-left: 250px;
+}
+.title {
+  padding: 63px 0 0 191px;
+}
+.title-first {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #5282f0;
+  text-decoration: none;
+  position: relative;
+}
+.title-first::before {
+  content: "";
+  width: 23px;
+  height: 24px;
+  position: absolute;
+
+  background: url("../img/ball.svg") no-repeat;
+  top: 0px;
+  left: -30px;
+}
+.title-first::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background: url("../img/grow.svg") no-repeat;
+  top: -2px;
+  left: -13px;
+}
+
+.header__container {
+  margin-top: 133px;
+  margin-left: 163px;
+  max-width: 563px;
+}
+.header__caption {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+.header__text {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.44;
+  color: #4f4f4f;
+  width: 452px;
+}
+.header__button {
+  margin-top: 50px;
+  display: flex;
+}
+.header__google {
+  margin-left: 36px;
+}
+.button {
+  width: 156px;
+  height: 47px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+
+  position: relative;
+  width: 156px;
+  height: 47px;
+
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid transparent;
+}
+
+span {
+  display: inline-block;
+}
+
+.container__mob {
+  position: relative;
+}
+
+.mob__col {
+  position: absolute;
+  background: url("../img/Frame.png") 0 0/100% 100% no-repeat;
+  height: 670px;
+  width: 930px;
+}
+
+// .mobilka {
+//   position: relative;
+// }
+// .mob1::before {
+//   content: "";
+//   position: absolute;
+//   width: 400px;
+//   height: 470px;
+//   background: url("../img/transfer-center.jpg") no-repeat;
+//   top: -202px;
+//   left: 119px;
+// }
+// .mobilka {
+//   position: relative;
+// }
+// .mob2::before {
+//   content: "";
+//   position: absolute;
+//   width: 400px;
+//   height: 470px;
+//   background: url("../img/list.jpg") no-repeat;
+//   bottom: 380px;
+//   left: 498px;
+// }
+// .mobilka {
+//   position: relative;
+// }
+// .mob3::before {
+//   content: "";
+//   position: absolute;
+//   width: 400px;
+//   height: 470px;
+//   background: url("../img/randomrandom.png") no-repeat;
+//   top: 213px;
+//   right: -280px;
+// }
+// .mobilka {
+//   position: relative;
+// }
+// .mob4::before {
+//   content: "";
+//   position: absolute;
+//   width: 400px;
+//   height: 470px;
+//   background: url("../img/wigan-liverppol.jpg") no-repeat;
+//   top: 213px;
+//   left: 272px;
+// }
+// .mobilka {
+//   position: relative;
+// }
+// .mob5::before {
+//   content: "";
+//   position: absolute;
+//   width: 400px;
+//   height: 470px;
+//   background: url("../img/hazard-pogba.jpg");
+//   top: 213px;
+//   left: 646px;
+// }
