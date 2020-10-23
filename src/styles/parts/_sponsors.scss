@@ -1,0 +1,23 @@
+.sponsor__container {
+  background: #fafafa;
+  padding-bottom: 80px;
+}
+
+.sponsor__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #333333;
+  margin-top: 60px;
+  text-align: center;
+}
+.sponsor__block {
+  margin-top: 70px;
+}
+.sponsor__nav {
+  display: flex;
+  gap: 160px;
+}
+.sponsor__list:first-child {
+  margin-left: 180px;
+}

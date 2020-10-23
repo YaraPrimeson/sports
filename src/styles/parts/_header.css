@@ -3,6 +3,7 @@
   max-height: 665px;
   height: 665px;
   display: flex;
+  overflow: hidden;
 }
 .collumn {
   padding-left: 250px;
@@ -36,6 +37,7 @@
   top: -2px;
   left: -13px;
 }
+
 .header__container {
   margin-top: 133px;
   margin-left: 163px;

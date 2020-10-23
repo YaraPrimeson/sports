@@ -1,29 +1,37 @@
 .container {
-  max-width: 1040px;
-  // margin: 0 auto;
   position: relative;
+  display: flex;
 }
+
 .footballer__back {
-  background: url("../img/footballer.png") no-repeat;
+  position: absolute;
+
+  background: url("../img/footballer.png") 0 0/100% 100% no-repeat;
   height: 592px;
-  width: 805px;
-  opacity: linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%),
-    rgba(255, 255, 255, 0.5);
-  opacity: 0, 9;
+  width: 910px;
+  z-index: -1;
+  // background: linear-gradient(
+  //   270deg,
+  //   #ffffff 5.16%,
+  //   rgba(255, 255, 255, 0) 67.14%
+  // ),
+  // rgba(255, 255, 255, 0.5);
 }
-.conteiner__отступ {
+
+.conteiner__indent {
   padding-top: 100px;
   padding-left: 160px;
-  background: #fff;
 }
 
 .container__block {
   width: 360px;
   height: 218px;
-  border: 1px solid #000;
+
+  z-index: 2;
+  background: #fff;
+  border-radius: 4px;
 }
 .container__padd {
-  padding-left: 16px;
   position: relative;
 }
 .container__padd::before {
@@ -53,14 +61,111 @@ datetime {
   line-height: 1.3;
   padding-top: 27px;
   display: block;
+  padding-left: 16px;
 }
 .block__vs {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.27;
-  padding-top: 13px;
+  margin-top: 13px;
+  padding-left: 16px;
+  width: 90px;
+}
+.block__match {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  display: flex;
+  flex-grow: 1;
+  padding-left: 16px;
+}
+.block__footer {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 50px;
+  margin-top: 28px;
+  display: flex;
+}
+.footer__text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #4f4f4f;
+  padding-left: 15px;
+  padding-top: 14px;
+}
+.btn__switch {
+  position: relative;
+  cursor: pointer;
+  width: 27.29px;
+  height: 12.58px;
+  border: none;
+  background: #979797;
+  border-radius: 104.896px;
+  margin-left: 40px;
+  margin-top: 18px;
+}
+.btn__switch::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  bottom: -5px;
+  left: -5px;
+  background: url("../img/Ellipse.svg") center no-repeat;
+  position: absolute;
 }
 .block__img {
   width: 360px;
   height: 218px;
+  margin-top: -30px;
+  margin-left: 108px;
+  border-radius: 4px;
+}
+
+// second part
+
+.container__title {
+  margin-left: 275px;
+  margin-top: 135px;
+}
+.part__link {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #00adee;
+}
+
+.part__title {
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: 333333;
+}
+.part__info {
+  width: 410px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #4f4f4f;
+}
+.part__texttwo {
+  margin-top: 15px;
+}
+
+.part__foot {
+  margin-top: 22px;
+}
+.link__foot {
+  text-decoration: none;
+  color: #00adee;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  display: inline-block;
 }
