@@ -1,7 +1,11 @@
 * {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 .maincontent {
-  flex-grow: 1;
+  width: 100%;
+  overflow: hidden;
 }

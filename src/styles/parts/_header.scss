@@ -1,15 +1,34 @@
 .header {
   background: #f4f6f9;
-  max-height: 665px;
   height: 665px;
   display: flex;
-  overflow: hidden;
+  justify-content: space-between;
+  font-family: sans-serif;
 }
-.collumn {
-  padding-left: 250px;
+
+@media (max-width: 1200px) {
+  .left__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
+@media (max-width: 1200px) {
+  .collumn {
+    margin: 0 auto;
+  }
+}
+
 .title {
   padding: 63px 0 0 191px;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    padding: 0;
+    text-align: center;
+  }
 }
 .title-first {
   font-size: 24px;
@@ -23,11 +42,11 @@
   width: 23px;
   height: 24px;
   position: absolute;
-
   background: url("../img/ball.svg") no-repeat;
   top: 0px;
   left: -30px;
 }
+
 .title-first::after {
   content: "";
   width: 8px;
@@ -43,10 +62,27 @@
   margin-left: 163px;
   max-width: 563px;
 }
+
+@media (max-width: 1200px) {
+  .header__container {
+    width: auto;
+  }
+}
+@media (max-width: 676px) {
+  .header__container {
+    margin-left: 0;
+  }
+}
 .header__caption {
-  font-size: 36px;
+  font-size: calc(30px + 6 * (100vw / 1440));
   font-weight: 700;
   line-height: 1.33;
+}
+@media (max-width: 676px) {
+  .header__caption {
+    font-size: calc(30px + 6 * (100vw / 1440));
+    text-align: center;
+  }
 }
 .header__text {
   margin-top: 30px;
@@ -56,101 +92,71 @@
   color: #4f4f4f;
   width: 452px;
 }
+@media (max-width: 676px) {
+  .header__text {
+    width: auto;
+    text-align: center;
+    font-size: calc(14px + 4 * (100vw / 1440));
+  }
+}
+
 .header__button {
   margin-top: 50px;
   display: flex;
 }
+@media (max-width: 676px) {
+  .header__button {
+    justify-content: center;
+  }
+}
 .header__google {
   margin-left: 36px;
 }
+@media (max-width: 350px) {
+  .header__google {
+    margin-left: 5px;
+  }
+}
+.ios {
+  background: url("../img/AppleStore.svg") no-repeat;
+  width: 157px;
+  height: 47px;
+}
+.google {
+  background: url("../img/GooglePlay.jpg") no-repeat;
+  width: 157px;
+  height: 47px;
+}
 .button {
-  width: 156px;
-  height: 47px;
-  background: #000;
-  color: #fff;
   cursor: pointer;
-
-  position: relative;
-  width: 156px;
-  height: 47px;
-
   border-radius: 7px;
   font-family: "Roboto", sans-serif;
   border: 1px solid transparent;
 }
-
-span {
-  display: inline-block;
+@media (max-width: 500px) {
+  .google {
+    width: 150px;
+    height: 47px;
+  }
+}
+@media (max-width: 500px) {
+  .ios {
+    width: 150px;
+    height: 47px;
+  }
 }
 
 .container__mob {
-  position: relative;
+  margin: 0;
 }
-
-.mob__col {
-  position: absolute;
-  background: url("../img/Frame.png") 0 0/100% 100% no-repeat;
-  height: 670px;
-  width: 930px;
+@media (max-width: 1200px) {
+  .container__mob {
+    display: none;
+  }
 }
-
-// .mobilka {
-//   position: relative;
-// }
-// .mob1::before {
-//   content: "";
-//   position: absolute;
-//   width: 400px;
-//   height: 470px;
-//   background: url("../img/transfer-center.jpg") no-repeat;
-//   top: -202px;
-//   left: 119px;
-// }
-// .mobilka {
-//   position: relative;
-// }
-// .mob2::before {
-//   content: "";
-//   position: absolute;
-//   width: 400px;
-//   height: 470px;
-//   background: url("../img/list.jpg") no-repeat;
-//   bottom: 380px;
-//   left: 498px;
-// }
-// .mobilka {
-//   position: relative;
-// }
-// .mob3::before {
-//   content: "";
-//   position: absolute;
-//   width: 400px;
-//   height: 470px;
-//   background: url("../img/randomrandom.png") no-repeat;
-//   top: 213px;
-//   right: -280px;
-// }
-// .mobilka {
-//   position: relative;
-// }
-// .mob4::before {
-//   content: "";
-//   position: absolute;
-//   width: 400px;
-//   height: 470px;
-//   background: url("../img/wigan-liverppol.jpg") no-repeat;
-//   top: 213px;
-//   left: 272px;
-// }
-// .mobilka {
-//   position: relative;
-// }
-// .mob5::before {
-//   content: "";
-//   position: absolute;
-//   width: 400px;
-//   height: 470px;
-//   background: url("../img/hazard-pogba.jpg");
-//   top: 213px;
-//   left: 646px;
-// }
+.container__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: -5px;
+}

@@ -1,3 +1,16 @@
+.conteiner__comments {
+  font-family: sans-serif;
+}
+@media (max-width: 1520px) {
+  .conteiner__comments {
+    margin-top: 350px;
+  }
+}
+@media (max-width: 1200px) {
+  .conteiner__comments {
+    margin-top: 0;
+  }
+}
 .comments__title {
   margin-top: 65px;
   text-align: center;
@@ -7,13 +20,13 @@
   color: #333333;
 }
 .comments__button {
-  width: 50px;
+  width: 85px;
   height: 50px;
   border-radius: 50%;
   border: 1px solid #00adee;
   background: #ffffff;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 65px;
 }
 .shape {
   margin: 0 auto;
@@ -26,13 +39,60 @@
   flex-direction: row;
   gap: 50px;
   overflow: hidden;
+  justify-content: center;
 }
 .comments__list {
   display: block;
-  width: 310px;
-  height: 160px;
+  width: 20%;
+  height: auto;
   border: 1px solid #828282;
+  box-sizing: border-box;
   border-radius: 4px;
+  position: relative;
+}
+.comments__list::before {
+  content: "";
+  position: absolute;
+  background: url("../img/ebanayaptitsa.svg") center no-repeat;
+  width: 15px;
+  height: 15px;
+  top: 15px;
+  right: 15px;
+}
+@media (max-width: 1050px) {
+  .comments__list {
+    width: 25%;
+  }
+}
+@media (max-width: 850px) {
+  .comments__list {
+    width: 35%;
+  }
+}
+@media (max-width: 600px) {
+  .comments__list {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .comments__list:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  .comments__list:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .comments__list:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .comments__list:nth-child(2) {
+    display: none;
+  }
 }
 .list__fig {
   display: flex;
@@ -47,6 +107,11 @@
   margin-left: 11px;
   margin-top: 15px;
   position: relative;
+}
+@media (max-width: 1440px) {
+  .fig__name {
+    width: 50px;
+  }
 }
 .fig__name::after {
   content: "";
@@ -82,4 +147,27 @@
   border-radius: 50%;
   background: #828282;
   border: none;
+  cursor: pointer;
+}
+
+.but1 {
+  background: #828282;
+}
+.but2 {
+  background: #979595;
+}
+.but3 {
+  background: #b2b0b0;
+}
+.but4 {
+  background: #cdcbcb;
+}
+.but5 {
+  background: #e2e1e1;
+}
+.but6 {
+  background: #eeeeee;
+}
+.but7 {
+  background: #f7f7f7;
 }
