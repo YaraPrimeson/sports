@@ -113,19 +113,11 @@
     width: 50px;
   }
 }
-.fig__name::after {
-  content: "";
-  position: absolute;
-  background: url("../img/icontwitter.svg") no-repeat;
-  width: 15px;
-  height: 12px;
-  top: 6px;
-  left: 205px;
-}
+
 .fig__text {
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 19px;
   color: #4f4f4f;
   text-align: center;
   display: block;
