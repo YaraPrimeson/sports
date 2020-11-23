@@ -9,3 +9,79 @@
   width: 100%;
   overflow: hidden;
 }
+
+// button
+
+.header__button {
+  margin-top: 50px;
+  display: flex;
+}
+@media (max-width: 676px) {
+  .header__button {
+    justify-content: center;
+  }
+}
+.header__google {
+  margin-left: 36px;
+}
+@media (max-width: 350px) {
+  .header__google {
+    margin-left: 5px;
+  }
+}
+.ios {
+  background: url("../img/AppleStore.svg") no-repeat;
+  width: 157px;
+  height: 47px;
+}
+.google {
+  background: url("../img/GooglePlay.jpg") no-repeat;
+  width: 157px;
+  height: 47px;
+}
+.button {
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid transparent;
+}
+@media (max-width: 500px) {
+  .google {
+    width: 150px;
+    height: 47px;
+  }
+}
+@media (max-width: 500px) {
+  .ios {
+    width: 150px;
+    height: 47px;
+  }
+}
+// sports link
+.title-first {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #5282f0;
+  text-decoration: none;
+  position: relative;
+}
+.title-first::before {
+  content: "";
+  width: 23px;
+  height: 24px;
+  position: absolute;
+  background: url("../img/ball.svg") no-repeat;
+  top: 0px;
+  left: -30px;
+}
+
+.title-first::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background: url("../img/grow.svg") no-repeat;
+  top: -2px;
+  left: -13px;
+}
+//
